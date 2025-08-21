@@ -6,7 +6,7 @@ interface WelcomeScreenProps {
 
 export default function WelcomeScreen({ onStart }: WelcomeScreenProps) {
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 py-8 bg-gradient-to-br from-primary-50 to-blue-50">
+    <div className="min-h-screen flex items-center justify-center px-4 py-8" style={{background: 'linear-gradient(135deg, rgb(246, 246, 246) 0%, rgb(240, 240, 240) 100%)'}}>
       <div className="w-full max-w-2xl text-center">
         <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-12">
           <div className="mb-8">

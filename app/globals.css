@@ -4,41 +4,141 @@
 
 @layer base {
   body {
-    @apply bg-gray-50 text-gray-900 font-sans;
+    @apply bg-gray-50 text-gray-900;
+    font-family: sans-serif, arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+    background-color: rgb(4, 20, 37);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: rgb(14, 30, 47);
+    transform: translateY(-1px);
+  }
+  
+  .btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(4, 20, 37, 0.3);
   }
   
   .btn-secondary {
-    @apply bg-gray-200 hover:bg-gray-300 text-gray-700 font-medium py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
+    background-color: rgb(246, 246, 246);
+    color: rgb(93, 102, 111);
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover {
+    background-color: rgb(236, 236, 236);
+    border-color: #ccc;
+  }
+  
+  .btn-secondary:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(93, 102, 111, 0.3);
   }
   
   .form-input {
-    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgb(246, 246, 246);
+    color: rgb(93, 102, 111);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    font-family: sans-serif, arial;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: rgb(4, 20, 37);
+    box-shadow: 0 0 0 2px rgba(4, 20, 37, 0.1);
+    background-color: rgb(250, 250, 250);
+  }
+  
+  .form-input::placeholder {
+    color: rgba(93, 102, 111, 0.6);
   }
   
   .form-textarea {
-    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200 min-h-[120px];
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgb(246, 246, 246);
+    color: rgb(93, 102, 111);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    min-height: 120px;
     resize: vertical;
+    font-family: sans-serif, arial;
+  }
+  
+  .form-textarea:focus {
+    outline: none;
+    border-color: rgb(4, 20, 37);
+    box-shadow: 0 0 0 2px rgba(4, 20, 37, 0.1);
+    background-color: rgb(250, 250, 250);
+  }
+  
+  .form-textarea::placeholder {
+    color: rgba(93, 102, 111, 0.6);
   }
   
   .radio-option {
-    @apply flex items-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors duration-200;
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: rgb(246, 246, 246);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 8px;
+  }
+  
+  .radio-option:hover {
+    background-color: rgb(240, 240, 240);
+    border-color: #ccc;
   }
   
   .radio-option.selected {
-    @apply border-primary-500 bg-primary-50;
+    border-color: rgb(4, 20, 37);
+    background-color: rgba(4, 20, 37, 0.05);
   }
   
   .checkbox-option {
-    @apply flex items-center p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors duration-200;
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    background-color: rgb(246, 246, 246);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 6px;
+  }
+  
+  .checkbox-option:hover {
+    background-color: rgb(240, 240, 240);
+    border-color: #ccc;
   }
   
   .checkbox-option.selected {
-    @apply border-primary-500 bg-primary-50;
+    border-color: rgb(4, 20, 37);
+    background-color: rgba(4, 20, 37, 0.05);
   }
 }

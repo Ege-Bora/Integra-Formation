@@ -38,7 +38,7 @@ export default function RadioGroup({
           <div className="flex items-center">
             <div className={`w-4 h-4 rounded-full border-2 mr-3 flex items-center justify-center ${
               value === option 
-                ? 'border-primary-600 bg-primary-600' 
+                ? 'border-[rgb(4,20,37)] bg-[rgb(4,20,37)]' 
                 : 'border-gray-300'
             }`}>
               {value === option && (

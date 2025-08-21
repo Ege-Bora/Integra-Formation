@@ -49,7 +49,7 @@ export default function MatrixCheckbox({
                 />
                 <div className={`w-5 h-5 rounded border-2 flex items-center justify-center ${
                   values[key]
-                    ? 'border-primary-600 bg-primary-600' 
+                    ? 'border-[rgb(4,20,37)] bg-[rgb(4,20,37)]' 
                     : 'border-gray-300 hover:border-gray-400'
                 }`}>
                   {values[key] && (

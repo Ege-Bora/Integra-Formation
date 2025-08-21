@@ -6,13 +6,13 @@ interface CostEstimationScreenProps {
 
 export default function CostEstimationScreen({ onProceed }: CostEstimationScreenProps) {
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 py-8 bg-gradient-to-br from-primary-50 to-blue-50">
+    <div className="min-h-screen flex items-center justify-center px-4 py-8" style={{background: 'linear-gradient(135deg, rgb(246, 246, 246) 0%, rgb(240, 240, 240) 100%)'}}>
       <div className="w-full max-w-2xl text-center">
         <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-12">
           <div className="mb-8">
             <div className="mb-6">
-              <div className="inline-block p-4 bg-blue-100 rounded-full mb-6">
-                <svg className="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="inline-block p-4 rounded-full mb-6" style={{backgroundColor: 'rgba(4, 20, 37, 0.1)'}}>
+                <svg className="w-12 h-12" style={{color: 'rgb(4, 20, 37)'}} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
                 </svg>
               </div>
@@ -27,7 +27,7 @@ export default function CostEstimationScreen({ onProceed }: CostEstimationScreen
           
           <button
             onClick={onProceed}
-            className="btn-primary text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl"
+            className="btn-primary text-lg px-8 py-4 font-semibold shadow-lg hover:shadow-xl"
           >
             Maliyet Tahmini Görmek İstermisiniz?
           </button>
